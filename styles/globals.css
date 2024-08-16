@@ -28,13 +28,19 @@ li {
 
 a {
   color: inherit;
+  cursor: pointer;
 }
 
 button,
 input {
-  color: currentColor;
+  padding: 0;
+  margin: 0;
   font-family: inherit;
   font-size: inherit;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 ul,
@@ -50,4 +56,64 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+picture,
+img {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+picture,
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  /* inline-size: calc(100vw * (700 / 1440)); */
+  min-inline-size: 320px;
+  max-inline-size: 700px;
+
+  margin: 0 auto;
+  font-family: var(--main-font), serif;
+  font-weight: var(--main-fw-text);
+  line-height: normal;
+  letter-spacing: normal;
+  background-image: var(--themes-bg);
+  background-color: var(--main-bgc);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid var(--main-fc);
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-fc);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
 }

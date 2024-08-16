@@ -5,6 +5,7 @@
 ✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
+
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
@@ -14,7 +15,358 @@
 
 */
 
-.page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+.header {
+  margin: 100px 0;
+  align-items: center;
+  padding: 136px 0 21px;
+  font-family: var(--accent-font), serif;
+  color: var(--main-fc);
+  background-color: var(--main-bgc);
+  border: 2px solid var(--border-color);
+}
+
+.header__logo-link {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: var(----main-fw-text);
+  text-transform: uppercase;
+}
+
+.header__logo-title {
+  padding: 20px 0 25px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-weight: var(----main-fw-text);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__theme-menu {
+  padding-left: 18px;
+}
+
+.theme-menu__list {
+  gap: 13px;
+  font-size: 14px;
+  font-weight: var(--main-fw-text);
+}
+
+.theme-menu__item {
+  position: relative;
+}
+
+.theme-menu__button {
+  color: var(--main-fc);
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  display: block;
+  width: 16px;
+  position: absolute;
+  color: var(--main-fc);
+  opacity: 0.6;
+  transform: translateX(-20px);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-fc);
+  opacity: 0.6;
+  transition: width 0.3s ease;
+}
+
+.post__list {
+  font-family: var(--main-font), serif;
+  color: var(--main-fc);
+  font-weight: var(--main-fw-text);
+  gap: 50px;
+}
+
+.post__list-item {
+  background-color: var(--main-bgc);
+  border: 2px solid var(--border-color);
+}
+
+.post__list-item-title {
+  padding: 5px 0 5px 9px;
+  font-size: 18px;
+  font-weight: 700;
+  font-variation-settings: "wght" var(--main-fw-title);
+}
+
+.post__list-item-picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.post__list-item-picture picture {
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.post__list-item-label {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-family: var(--accent-font), serif;
+  mix-blend-mode: hard-light;
+  font-size: 14px;
+  opacity: 0.3;
+  text-shadow: none;
+}
+
+@supports (text-stroke: 1px var(--label-text-stroke)) or (-webkit-text-stroke: 1px var(--label-text-stroke)) {
+  .post__list-item-label {
+    -webkit-text-stroke: 1px var(--label-text-stroke);
+    text-stroke: 1px var(--label-text-stroke);
+  }
+}
+
+.post__list-item-bts-icon {
+  padding-top: 3px;
+}
+
+.post__list-item-text {
+  padding: 23px 25px 24px 25px;
+  gap: 26px;
+  font-size: 18px;
+  letter-spacing: normal;
+}
+
+.post__list-item-bts {
+  align-self: end;
+  display: flex;
+  gap: 6px;
+  font-family: var(--accent-font), serif;
+}
+
+.heart-outline {
+  fill: var(--heart-outline);
+}
+
+.post__list-item-btn-like {
+  inline-size: 130px;
+  block-size: 38px;
+}
+
+.like-icon.is-liked .heart-outline {
+  fill: var(--heart-focus-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.heart-fill {
+  fill: var(--heart-fill);
+  transition: fill 0.3s ease-in-out;
+}
+
+.like-icon.is-liked .heart-fill {
+  fill: var(--heart-focus-color);
+  transition: fill 0.5s ease-in-out;
+}
+
+.heart-stars {
+  opacity: 0;
+}
+
+.heart-cross {
+  fill: var(--heart-cross);
+  transition: fill 0.3s ease-in-out;
+}
+
+.like-icon.is-liked .heart-cross {
+  fill: var(--heart-focus-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.post__list-item-btn-like {
+  font-family: var(--accent-font), serif;
+  font-size: 14px;
+  padding: 0 63px;
+}
+
+.button__text {
+  position: absolute;
+  z-index: 11;
+  mix-blend-mode: difference;
+}
+
+.button__text::first-letter {
+  text-transform: uppercase;
+}
+
+.theme-light .button__text {
+  color: var(--main-bgc);
+}
+
+.theme-dark .button__text {
+  color: var(--main-fc);
+}
+
+.grayscale {
+  filter: grayscale(50%);
+}
+
+.saturate {
+  filter: saturate(360%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(30deg);
+}
+
+.invert {
+  filter: invert(80%);
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.blur {
+  filter: blur(20px);
+}
+
+.multi-filter {
+  filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
+}
+
+.footer__form {
+  align-items: center;
+  padding: 49px 0;
+}
+
+.footer-btn-save {
+  max-inline-size: 340px;
+  block-size: 55px;
+  inline-size: 100%;
+  font-family: var(--accent-font), serif;
+  font-size: 14px;
+  padding: 26px 0;
+  background-color: var(--main-bgc);
+  gap: 8px;
+}
+
+.floppy {
+  position: absolute;
+  left: 20px;
+}
+
+.footer-btn-save-text {
+  right: 20px;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-inline-size: 353px;
+  inline-size: 100%;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  padding: 30px 30px 30px 29px;
+  color: var(--main-fc);
+  background: var(--main-bgc);
+  border: 2px solid var(--border-color);
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog:not([open]) {
+  display: none;
+}
+
+.dialog__content {
+  flex-direction: row;
+  gap: 19px;
+}
+
+.dialog__text {
+  text-transform: uppercase;
+  line-height: 145%;
+}
+
+.dialog-floppy {
+  width: 82px;
+  fill: var(--main-fc);
+}
+
+.button-ok {
+  inline-size: 293px;
+  block-size: 38px;
+}
+
+@media (width <=375px) {
+  .header {
+    padding-top: 120px;
+  }
+
+  .header__logo-title {
+    line-height: 100%;
+  }
+
+  .post__list-item-title {
+    padding-top: 5px;
+    line-height: 117%;
+    letter-spacing: 0.1px;
+  }
+
+  .post__list-item-img {
+    max-inline-size: 375px;
+    max-block-size: 375px;
+  }
+
+  .post__list-item-label {
+    right: 10px;
+  }
+
+  .post__list-item-text {
+    gap: 26px;
+  }
+
+  .footer-btn-save {
+    inline-size: 306px;
+    block-size: 84px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .floppy {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 16px;
+    left: auto;
+  }
+
+  .footer-btn-save-text {
+    right: auto;
+    bottom: 13px;
+  }
+
+  .dialog {
+    max-inline-size: 341px;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 35px;
+  }
+
+  .dialog-floppy {
+    width: 90px;
+  }
+
+  .button-ok {
+    inline-size: 257px;
+  }
 }

@@ -1,1 +1,34 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --accent-font: 'PressStart2P';
+    --main-font: 'Inter-Variable';
+    --main-fw-text: 400;
+    --main-fw-title: 700;
+    --main-fc: #000;
+    --accent-fc: #000;
+    --main-bgc: #fff;
+    --border-color: #000;
+    --label-text-stroke: #fff;
+
+
+    --heart-outline: #000;
+    --heart-fill: #fff;
+    --heart-cross: #fff;
+
+    --heart-hover-color: #000;
+    --heart-focus-color: red;
+
+    --themes-bg: repeating-linear-gradient(90deg,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #e7e7e7,
+            #1a1a1a 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #e7e7e7 0.01%,
+            #1a1a1a);
+}
