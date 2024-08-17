@@ -74,16 +74,10 @@ img {
   object-position: center;
 }
 
-.fc {
-  display: flex;
-  flex-direction: column;
-}
-
 .page {
   /* inline-size: calc(100vw * (700 / 1440)); */
   min-inline-size: 320px;
   max-inline-size: 700px;
-
   margin: 0 auto;
   font-family: var(--main-font), serif;
   font-weight: var(--main-fw-text);

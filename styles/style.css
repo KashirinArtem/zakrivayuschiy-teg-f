@@ -15,6 +15,11 @@
 
 */
 
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   margin: 100px 0;
   align-items: center;
