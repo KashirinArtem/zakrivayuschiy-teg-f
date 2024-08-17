@@ -23,19 +23,18 @@
   color: var(--main-fc);
   background-color: var(--main-bgc);
   border: 2px solid var(--border-color);
+  text-transform: uppercase;
 }
 
 .header__logo-link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: var(----main-fw-text);
-  text-transform: uppercase;
 }
 
 .header__logo-title {
   padding: 20px 0 25px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-weight: var(----main-fw-text);
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -200,10 +199,6 @@
   mix-blend-mode: difference;
 }
 
-.button__text::first-letter {
-  text-transform: uppercase;
-}
-
 .theme-light .button__text {
   color: var(--main-bgc);
 }
@@ -265,8 +260,9 @@
   right: 20px;
 }
 
-
-
+.button-ok {
+  text-transform: uppercase;
+}
 
 .dialog {
   display: flex;
