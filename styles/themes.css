@@ -14,6 +14,7 @@
         --accent-fc: #000;
         --main-bgc: #fff;
         --border-color: #000;
+        --mix-blend-mode-text-color: var(--main-bgc);
         --label-text-stroke: #fff;
         --themes-bg: repeating-linear-gradient(90deg,
                 #d3d3d3,
@@ -38,6 +39,7 @@
         --main-fw-title: 785;
         --main-fc: #00CC14;
         --main-bgc: #000000;
+        --mix-blend-mode-text-color: var(--main-fc);
         --border-color: #00CC14;
         --label-text-stroke: #00CC14;
         --heart-outline: #00CC14;

@@ -10,6 +10,7 @@
     --border-color: #000;
     --label-text-stroke: #fff;
     --font-variation-settings: 'wght' var(--main-fw-text);
+    --mix-blend-mode-text-color: var(--main-bgc);
 
 
     --heart-outline: #000;

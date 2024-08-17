@@ -239,15 +239,8 @@
 }
 
 .button__text {
+  color: var(--mix-blend-mode-text-color);
   mix-blend-mode: difference;
-}
-
-.theme-light .button__text {
-  color: var(--main-bgc);
-}
-
-.theme-dark .button__text {
-  color: var(--main-fc);
 }
 
 .grayscale {
