@@ -25,7 +25,7 @@
   min-inline-size: 320px;
   max-inline-size: 700px;
   margin: 0 auto;
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), sans-serif;
   font-weight: var(--main-fw-text);
   line-height: normal;
   letter-spacing: normal;
@@ -129,7 +129,7 @@
 }
 
 .post__list {
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), sans-serif;
   color: var(--main-fc);
   font-weight: var(--main-fw-text);
   gap: 50px;
