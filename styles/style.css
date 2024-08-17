@@ -305,7 +305,7 @@
   text-transform: uppercase;
 }
 
-.dialog {
+.dialog[open] {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -321,10 +321,6 @@
 
 .dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
-}
-
-.dialog:not([open]) {
-  display: none;
 }
 
 .dialog__content {
@@ -383,11 +379,8 @@
   }
 
   .floppy {
-    position: absolute;
     width: 28px;
     height: 28px;
-    top: 16px;
-    left: auto;
   }
 
   .save-btn-text {
