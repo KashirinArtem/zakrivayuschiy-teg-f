@@ -165,11 +165,12 @@
   mix-blend-mode: hard-light;
   font-size: 14px;
   opacity: 0.3;
-  text-shadow: 0 4px 4px #000;
+  text-shadow: 0 4px 4px var(--label-text-stroke);
 }
 
 @supports (text-stroke: 1px var(--label-text-stroke)) or (-webkit-text-stroke: 1px var(--label-text-stroke)) {
   .post__list-item-label {
+    text-shadow: none;
     -webkit-text-stroke: 1px var(--label-text-stroke);
     text-stroke: 1px var(--label-text-stroke);
   }
