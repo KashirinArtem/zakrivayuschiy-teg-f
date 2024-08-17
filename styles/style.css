@@ -239,8 +239,6 @@
 }
 
 .button__text {
-  position: absolute;
-  z-index: 11;
   mix-blend-mode: difference;
 }
 
@@ -286,19 +284,17 @@
 }
 
 .save-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-inline-size: 340px;
   block-size: 55px;
   inline-size: 100%;
   font-family: var(--accent-font), serif;
   font-size: 14px;
-  padding: 26px 0;
+  padding: 0 20px;
   background-color: var(--main-bgc);
   gap: 8px;
-}
-
-.floppy {
-  position: absolute;
-  left: 20px;
 }
 
 .save-btn-text {
