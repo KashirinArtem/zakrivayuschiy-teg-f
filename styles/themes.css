@@ -36,17 +36,14 @@
     :root.theme-dark {
         --main-fw-text: 465;
         --main-fw-title: 785;
-
         --main-fc: #00CC14;
         --main-bgc: #000000;
         --border-color: #00CC14;
         --label-text-stroke: #00CC14;
-
         --heart-outline: #00CC14;
         --heart-fill: #000;
         --heart-cross: #000;
         --heart-hover-color: #00CC14;
-
         --themes-bg: repeating-linear-gradient(90deg,
                 #000,
                 #000 2px,

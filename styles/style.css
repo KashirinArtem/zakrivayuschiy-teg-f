@@ -33,6 +33,7 @@
   background-color: var(--main-bgc);
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: "wght" var(--main-fw-text);
 }
 
 .button {

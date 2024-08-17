@@ -9,6 +9,7 @@
     --main-bgc: #fff;
     --border-color: #000;
     --label-text-stroke: #fff;
+    --font-variation-settings: 'wght' var(--main-fw-text);
 
 
     --heart-outline: #000;
