@@ -240,12 +240,12 @@
   filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
 }
 
-.footer__form {
+.save {
   align-items: center;
   padding: 49px 0;
 }
 
-.footer-btn-save {
+.save-btn {
   max-inline-size: 340px;
   block-size: 55px;
   inline-size: 100%;
@@ -261,9 +261,12 @@
   left: 20px;
 }
 
-.footer-btn-save-text {
+.save-btn-text {
   right: 20px;
 }
+
+
+
 
 .dialog {
   display: flex;
@@ -335,7 +338,7 @@
     gap: 26px;
   }
 
-  .footer-btn-save {
+  .save-btn {
     inline-size: 306px;
     block-size: 84px;
     flex-direction: row;
@@ -350,7 +353,7 @@
     left: auto;
   }
 
-  .footer-btn-save-text {
+  .save-btn-text {
     right: auto;
     bottom: 13px;
   }
