@@ -35,6 +35,16 @@
   background-attachment: fixed;
 }
 
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid var(--main-fc);
+  overflow: hidden;
+}
+
 .header {
   margin: 100px 0;
   align-items: center;

@@ -74,16 +74,6 @@ img {
   object-position: center;
 }
 
-.button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border: 2px solid var(--main-fc);
-  overflow: hidden;
-}
-
 .button::before {
   content: "";
   display: block;
