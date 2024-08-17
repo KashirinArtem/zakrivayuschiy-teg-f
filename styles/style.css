@@ -25,7 +25,7 @@
   min-inline-size: 320px;
   max-inline-size: 700px;
   margin: 0 auto;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), Arial, sans-serif;
   font-weight: var(--main-fw-text);
   line-height: normal;
   letter-spacing: normal;
@@ -63,7 +63,7 @@
   margin: 100px 0;
   align-items: center;
   padding: 136px 0 21px;
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), Arial, fantasy;
   color: var(--main-fc);
   background-color: var(--main-bgc);
   border: 2px solid var(--border-color);
@@ -129,7 +129,7 @@
 }
 
 .post__list {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), Arial, sans-serif;
   color: var(--main-fc);
   font-weight: var(--main-fw-text);
   gap: 50px;
@@ -161,7 +161,7 @@
   position: absolute;
   right: 25px;
   top: 25px;
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), Arial, fantasy;
   mix-blend-mode: hard-light;
   font-size: 14px;
   opacity: 0.3;
@@ -191,7 +191,7 @@
   align-self: end;
   display: flex;
   gap: 6px;
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), Arial, fantasy;
 }
 
 .heart-outline {
@@ -233,7 +233,7 @@
 }
 
 .post__list-item-btn-like {
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), Arial, fantasy;
   font-size: 14px;
   padding: 0 63px;
 }
@@ -283,7 +283,7 @@
   max-inline-size: 340px;
   block-size: 55px;
   inline-size: 100%;
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), Arial, fantasy;
   font-size: 14px;
   padding: 0 20px;
   background-color: var(--main-bgc);
@@ -304,7 +304,7 @@
   gap: 30px;
   max-inline-size: 353px;
   inline-size: 100%;
-  font-family: var(--accent-font), fantasy;
+  font-family: var(--accent-font), Arial, fantasy;
   font-size: 14px;
   padding: 30px 30px 30px 29px;
   color: var(--main-fc);
