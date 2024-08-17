@@ -20,6 +20,21 @@
   flex-direction: column;
 }
 
+.page {
+  /* inline-size: calc(100vw * (700 / 1440)); */
+  min-inline-size: 320px;
+  max-inline-size: 700px;
+  margin: 0 auto;
+  font-family: var(--main-font), serif;
+  font-weight: var(--main-fw-text);
+  line-height: normal;
+  letter-spacing: normal;
+  background-image: var(--themes-bg);
+  background-color: var(--main-bgc);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header {
   margin: 100px 0;
   align-items: center;
