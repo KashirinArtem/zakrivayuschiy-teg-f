@@ -7,7 +7,9 @@
 
 
 @media (prefers-color-scheme: light) {
-    :root {
+
+    :root.theme-light,
+    :root.theme-auto {
         --main-fw-text: 400;
         --main-fw-title: 700;
         --main-fc: #000;
@@ -33,7 +35,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+
+    :root.theme-dark,
+    :root.theme-auto {
         --main-fw-text: 465;
         --main-fw-title: 785;
         --main-fc: #00CC14;
