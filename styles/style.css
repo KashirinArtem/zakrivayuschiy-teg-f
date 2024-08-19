@@ -44,6 +44,7 @@
   position: relative;
   border: 2px solid var(--main-fc);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -56,7 +57,7 @@
   height: 100%;
   background-color: var(--main-fc);
   transform: translateX(-100%);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 .header {
