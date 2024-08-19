@@ -7,9 +7,7 @@
 
 
 @media (prefers-color-scheme: light) {
-
-    :root.theme-light,
-    :root.theme-auto {
+    :root {
         --main-fw-text: 400;
         --main-fw-title: 700;
         --main-fc: #000;
@@ -31,14 +29,11 @@
             repeating-linear-gradient(180deg,
                 #e7e7e7 0.01%,
                 #1a1a1a);
-        ;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-
-    :root.theme-dark,
-    :root.theme-auto {
+    :root {
         --main-fw-text: 465;
         --main-fw-title: 785;
         --main-fc: #00CC14;

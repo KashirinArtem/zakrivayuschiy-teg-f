@@ -291,8 +291,17 @@
   gap: 8px;
 }
 
-.save-btn-text {
-  right: 20px;
+.floppy {
+  position: relative;
+  z-index: 11;
+  max-width: 21px;
+  height: 21px;
+  fill: var(--mix-blend-mode-fill-color);
+  mix-blend-mode: difference;
+}
+
+path {
+  fill: green;
 }
 
 .button-ok {
