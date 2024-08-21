@@ -164,8 +164,9 @@
   top: 25px;
   font-family: var(--accent-font), Arial, fantasy;
   mix-blend-mode: hard-light;
+  color: var(--main-fc);
   font-size: 14px;
-  opacity: 0.3;
+  opacity: 0.5;
   text-shadow: 0 4px 4px var(--label-text-stroke);
 }
 
