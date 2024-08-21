@@ -35,3 +35,56 @@
             #e7e7e7 0.01%,
             #1a1a1a);
 }
+
+:root.theme-light {
+    --main-fw-text: 400;
+    --main-fw-title: 700;
+    --main-fc: #000;
+    --accent-fc: #000;
+    --main-bgc: #fff;
+    --border-color: #000;
+    --mix-blend-mode-text-color: var(--main-bgc);
+    --mix-blend-fill-color: #fff;
+    --label-text-stroke: #fff;
+    --themes-bg: repeating-linear-gradient(90deg,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #e7e7e7,
+            #1a1a1a 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #e7e7e7 0.01%,
+            #1a1a1a);
+}
+
+:root.theme-dark {
+    --main-fw-text: 465;
+    --main-fw-title: 785;
+    --main-fc: #00CC14;
+    --main-bgc: #000000;
+    --mix-blend-mode-text-color: var(--main-fc);
+    --mix-blend-fill-color: #00CC14;
+    --border-color: #00CC14;
+    --label-text-stroke: #00CC14;
+    --heart-outline: #00CC14;
+    --heart-fill: #000;
+    --heart-cross: #000;
+    --heart-hover-color: #00CC14;
+    --themes-bg: repeating-linear-gradient(90deg,
+            #000,
+            #000 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #007f0c,
+            #004306 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #007f0c 0.01%,
+            #004306)
+}
