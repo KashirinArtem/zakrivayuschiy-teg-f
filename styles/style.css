@@ -182,10 +182,18 @@
 }
 
 .post__list-item-text {
-  padding: 23px 25px 24px 25px;
+  padding: 27px 25px 24px 25px;
   gap: 26px;
   font-size: 18px;
+
+}
+
+.theme-light .post__list-item-text {
   letter-spacing: normal;
+}
+
+.theme-dark .post__list-item-text {
+  letter-spacing: -0.1px;
 }
 
 .post__list-item-bts {
@@ -274,7 +282,7 @@
 
 .save {
   align-items: center;
-  padding: 49px 0;
+  padding: 52px 0 100px;
 }
 
 .save-btn {
@@ -372,6 +380,10 @@ path {
 
   .post__list-item-text {
     gap: 26px;
+  }
+
+  .save {
+    padding-bottom: 98px;
   }
 
   .save-btn {
