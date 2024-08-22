@@ -26,15 +26,21 @@ button:focus {
     box-shadow: 2px 2px 0px 0px var(--main-fc);
 }
 
-.post__list-item-bts-icon:hover .heart-fill,
-.post__list-item-bts-icon:hover .heart-cross {
-    fill: var(--heart-hover-color)
+.like-icon:hover .core,
+.like-icon:hover .main-body {
+    fill: var(--body-core-hover);
+}
+
+
+.card__icon-button:active .core,
+.card__icon-button:active .main-body {
+    fill: var(--body-core-active);
 }
 
 .like-icon.is-liked {
     animation: scale 0.3s ease-in 0.1s 1 alternate;
 }
 
-.like-icon.is-liked .heart-stars {
+.like-icon.is-liked .sparks {
     animation: stars 0.3s ease-in 0.3s 1 alternate;
 }

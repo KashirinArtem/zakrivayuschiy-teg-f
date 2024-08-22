@@ -12,15 +12,11 @@
     --font-variation-settings: 'wght' var(--main-fw-text);
     --mix-blend-mode-text-color: var(--main-bgc);
     --mix-blend-fill-color: #fff;
-
-
-    --heart-outline: #000;
-    --heart-fill: #fff;
-    --heart-cross: #fff;
-
-    --heart-hover-color: #000;
-    --heart-focus-color: red;
-
+    --contour-fill: #000;
+    --body-core-fill: #fff;
+    --sparks-fill: red;
+    --body-core-hover: #000;
+    --body-core-active: red;
     --themes-bg: repeating-linear-gradient(90deg,
             #d3d3d3,
             #d3d3d3 2px,
@@ -46,6 +42,11 @@
     --mix-blend-mode-text-color: var(--main-bgc);
     --mix-blend-fill-color: #fff;
     --label-text-stroke: #fff;
+    --contour-fill: #000;
+    --body-core-fill: #fff;
+    --sparks-fill: red;
+    --body-core-hover: #000;
+    --body-core-active: red;
     --themes-bg: repeating-linear-gradient(90deg,
             #d3d3d3,
             #d3d3d3 2px,
@@ -70,10 +71,11 @@
     --mix-blend-fill-color: #00CC14;
     --border-color: #00CC14;
     --label-text-stroke: #00CC14;
-    --heart-outline: #00CC14;
-    --heart-fill: #000;
-    --heart-cross: #000;
-    --heart-hover-color: #00CC14;
+    --contour-fill: #00CC14;
+    --body-core-fill: #000;
+    --sparks-fill: red;
+    --body-core-hover: #00CC14;
+    --body-core-active: red;
     --themes-bg: repeating-linear-gradient(90deg,
             #000,
             #000 2px,
