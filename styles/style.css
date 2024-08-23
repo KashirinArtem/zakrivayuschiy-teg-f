@@ -302,7 +302,7 @@
   z-index: 11;
   width: 21px;
   height: 21px;
-  fill: var(--mix-blend-fill-color);
+  color: var(--mix-blend-fill-color);
   mix-blend-mode: difference;
 }
 
