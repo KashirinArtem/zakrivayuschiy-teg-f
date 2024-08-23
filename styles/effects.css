@@ -35,11 +35,18 @@ button:focus {
     fill: var(--body-core-hover);
 }
 
+.like-icon.is-liked:hover .core,
+.like-icon.is-liked:hover .main-body {
+    fill: var(--like-icon-is-liked-hover);
+}
+
 
 .card__icon-button:active .core,
 .card__icon-button:active .main-body {
     fill: var(--body-core-active);
 }
+
+
 
 .like-icon.is-liked .heart {
     transform-origin: center;

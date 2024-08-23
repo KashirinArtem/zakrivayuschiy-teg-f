@@ -17,6 +17,7 @@
     --sparks-fill: red;
     --body-core-hover: #000;
     --body-core-active: red;
+    --like-icon-is-liked-hover: red;
     --themes-bg: repeating-linear-gradient(90deg,
             #d3d3d3,
             #d3d3d3 2px,
