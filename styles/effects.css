@@ -26,6 +26,10 @@ button:focus {
     box-shadow: 2px 2px 0px 0px var(--main-fc);
 }
 
+.card__icon-button:focus-visible {
+    outline: 2px solid var(--main-fc);
+}
+
 .like-icon:hover .core,
 .like-icon:hover .main-body {
     fill: var(--body-core-hover);
