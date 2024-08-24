@@ -309,6 +309,8 @@ path {
 }
 
 .button-ok {
+  inline-size: 293px;
+  block-size: 38px;
   text-transform: uppercase;
 }
 
@@ -343,11 +345,6 @@ path {
 .dialog-floppy {
   width: 82px;
   fill: var(--main-fc);
-}
-
-.button-ok {
-  inline-size: 293px;
-  block-size: 38px;
 }
 
 @media (width <=375px) {
