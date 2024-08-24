@@ -40,13 +40,10 @@ button:focus {
     fill: var(--like-icon-is-liked-hover);
 }
 
-
 .card__icon-button:active .core,
 .card__icon-button:active .main-body {
     fill: var(--body-core-active);
 }
-
-
 
 .like-icon.is-liked .heart {
     transform-origin: center;
