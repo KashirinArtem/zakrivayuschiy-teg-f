@@ -315,7 +315,6 @@ path {
 }
 
 .dialog[open] {
-  opacity: .1;
   display: flex;
   flex-direction: column;
   gap: 30px;
