@@ -211,6 +211,10 @@
 .post__list-item-btn-like {
   inline-size: 130px;
   block-size: 38px;
+  padding: 0 63px;
+  font-family: var(--accent-font), Arial, fantasy;
+  font-size: 14px;
+
 }
 
 .sparks {
@@ -237,12 +241,6 @@
 .like-icon.is-liked .main-body,
 .like-icon.is-liked .contour {
   fill: var(--body-core-active);
-}
-
-.post__list-item-btn-like {
-  font-family: var(--accent-font), Arial, fantasy;
-  font-size: 14px;
-  padding: 0 63px;
 }
 
 .button__text {
