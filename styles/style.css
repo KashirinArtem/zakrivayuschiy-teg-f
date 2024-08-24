@@ -315,6 +315,7 @@ path {
 }
 
 .dialog[open] {
+  opacity: .1;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -362,6 +363,10 @@ path {
     letter-spacing: 0.1px;
   }
 
+  .theme-dark .post__list-item-title {
+    letter-spacing: normal;
+  }
+
   .post__list-item-img {
     max-inline-size: 375px;
     max-block-size: 375px;
@@ -394,15 +399,19 @@ path {
     height: 28px;
   }
 
-  .dialog {
+  .dialog[open] {
     max-inline-size: 341px;
-    padding-left: 41px;
+    padding-left: 39px;
     padding-right: 41px;
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   .dialog-floppy {
-    width: 90px;
+    width: 98px;
+  }
+
+  .dialog__text {
+    line-height: 150%;
   }
 
   .button-ok {
