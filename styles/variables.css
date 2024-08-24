@@ -9,7 +9,6 @@
     --main-bgc: #fff;
     --border-color: #000;
     --label-text-stroke: #fff;
-    --font-variation-settings: 'wght' var(--main-fw-text);
     --mix-blend-mode-text-color: var(--main-bgc);
     --mix-blend-fill-color: #fff;
     --contour-fill: #000;
