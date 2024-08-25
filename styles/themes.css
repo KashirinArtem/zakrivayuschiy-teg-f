@@ -4,12 +4,67 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --main-fw-text: 465;
+    --main-fw-title: 785;
+    --main-fc: #00CC14;
+    --main-bgc: #000000;
+    --mix-blend-mode-text-color: var(--main-fc);
+    --mix-blend-fill-color: #00CC14;
+    --border-color: #00CC14;
+    --label-text-stroke: #000;
+    --contour-fill: #00CC14;
+    --body-core-fill: #000;
+    --sparks-fill: red;
+    --body-core-hover: #00CC14;
+    --body-core-active: red;
+    --themes-bg: repeating-linear-gradient(90deg,
+            #000,
+            #000 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #007f0c,
+            #004306 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #007f0c 0.01%,
+            #004306)
+}
 
+:root.theme-light {
+    --main-fw-text: 400;
+    --main-fw-title: 700;
+    --main-fc: #000;
+    --accent-fc: #000;
+    --main-bgc: #fff;
+    --border-color: #000;
+    --mix-blend-mode-text-color: var(--main-bgc);
+    --mix-blend-fill-color: #fff;
+    --label-text-stroke: #fff;
+    --contour-fill: #000;
+    --body-core-fill: #fff;
+    --sparks-fill: red;
+    --body-core-hover: #000;
+    --body-core-active: red;
+    --themes-bg: repeating-linear-gradient(90deg,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #e7e7e7,
+            #1a1a1a 2px,
+            transparent 2px,
+            transparent 4px),
+        repeating-linear-gradient(180deg,
+            #e7e7e7 0.01%,
+            #1a1a1a);
+}
 
 @media (prefers-color-scheme: light) {
-
-    :root,
-    :root.theme-light {
+    :root {
         --main-fw-text: 400;
         --main-fw-title: 700;
         --main-fc: #000;
@@ -41,9 +96,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
-    :root,
-    :root.theme-dark {
+    :root {
         --main-fw-text: 465;
         --main-fw-title: 785;
         --main-fc: #00CC14;
